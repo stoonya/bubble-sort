@@ -1,0 +1,25 @@
+{
+  "name": "bubble-sort",
+  "version": "1.0.0",
+  "description": "Sorts different types of collections using bubble sort algorithm",
+  "main": "index.ts",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon target/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stoonya/bubble-sort.git"
+  },
+  "author": "stoonya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stoonya/bubble-sort/issues"
+  },
+  "homepage": "https://github.com/stoonya/bubble-sort#readme",
+  "devDependencies": {
+    "concurrently": "^6.1.0",
+    "nodemon": "^2.0.7"
+  }
+}
