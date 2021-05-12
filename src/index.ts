@@ -1,14 +1,30 @@
 import { NumbersCollection } from './NumbersCollection';
 import { CharactersCollection } from './CharactersCollection';
-import { Sorter } from './Sorter';
+import { LinkedList } from './LinkedList';
 
 
 const numbersCollection = new NumbersCollection([7, 3, -18, 64, -5]);
-const numbersSorter = new Sorter(numbersCollection);
-numbersSorter.sort();
-console.log(numbersCollection.data);
+console.log(`Not sorted: ${numbersCollection.data}`);
+numbersCollection.sort();
+console.log(`Sorted: ${numbersCollection.data}`);
+
+console.log('-----');
 
 const str = new CharactersCollection('Xayab');
-const stringSorter = new Sorter(str);
-stringSorter.sort();
-console.log(str.data);
+console.log(`Not sorted: ${str.data}`);
+str.sort();
+console.log(`Sorted: ${str.data}`);
+
+console.log('-----');
+
+const lst = new LinkedList();
+
+lst.add(4);
+lst.add(6);
+lst.add(-12);
+console.log(`Not sorted:`);
+lst.print();
+
+console.log(`Sorted:`);
+lst.sort();
+lst.print();
